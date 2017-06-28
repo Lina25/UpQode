@@ -6,6 +6,12 @@ jQuery(document).ready(function ($) {
 		$(".preloader").delay(1000).fadeOut("slow");
 	});
 
+//	$(".scrollup").click(function(){
+//        window.scrollTo(0,0);
+//    });
+	// scroll Up
+
+   
     /*---------------------------------------------*
      * Mobile menu
      ---------------------------------------------*/
@@ -49,6 +55,8 @@ jQuery(document).ready(function ($) {
         target: '.navbar',
         offset: 160
     });
+
+	
 
     /*---------------------------------------------*
      * Google Map Area
@@ -215,26 +223,19 @@ jQuery(document).ready(function ($) {
             }
         }
     }	
-	
-
-//  new GMaps({
-// div: '#map',
-// lat: -12.043333,
-// lng: -77.028333
-//});
-//	map.addMarker({
-//  lat: -12.043333,
-//  lng: -77.028333,
-//  title: 'Lima',
-//  click: function(e) {
-//    alert('You clicked in this marker');
-//  }
-//});
-
-    /*---------------------------------------------*
-     * STICKY scroll
-     ---------------------------------------------*/
-
-    $.localScroll();
-
+   
 });
+
+ $(window).scroll(function () {
+        if ($(this).scrollTop() > 800) {
+            $('.scrollup').fadeIn('slow');
+        } else {
+            $('.scrollup').fadeOut('slow');
+        }
+    });
+    $('.scrollup').click(function () {
+        $("html, body").animate({scrollTop: 0}, 1000);
+        return false;
+    });
+
+

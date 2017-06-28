@@ -683,4 +683,28 @@ margin-top: 25px;
 .contact-form-area form .contact-btn:hover {
 	background: #fff;
 }
+/*Scroll Up*/
+
+.scrollup{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    background: #4bcaff;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-weight: bold;
+    border-radius: 100%;
+    transition:all 500ms .2s;
+    cursor:pointer;
+		z-index: 40;
+
+}
+.scrollup:hover{
+    background: #008ac4;
+    color: #fff;
+    transform:scale(1.1);
+}	
 
