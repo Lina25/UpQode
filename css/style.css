@@ -649,21 +649,26 @@ p:last-child {
     top: 0;
     z-index: 20;
 }
+
+/*Contact form*/
+
+.contact_form {
+	position:relative;
+	z-index: 30;    
+}
+
 .contact-form-area {
 	position: absolute;
-	bottom: 145px;
 	background-color: #000;
 	opacity: .4;
 	color: #fff;
-	padding: 30px;
-	width: 100%;
+	top: 50px;
+    left: 50%;
+    margin-left: -250px;
+    width: 600px;
 }
 label {
 	margin-left: 22px;
-}
-.contact_form {
-	position:relative;
-	z-index: 30;
 }
 
 .checkbox input[type="checkbox"] {
@@ -690,6 +695,7 @@ label {
 .form_txt {
 	color: #fff;
 }
+
 /*Scroll Up*/
 
 .scrollup{
