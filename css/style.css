@@ -1,4 +1,3 @@
-/*Custom styles*/
 
 html,
 body {
@@ -43,9 +42,8 @@ a span {
 }
 
 
-/*==========================================
-PRE LOADER 
-==========================================*/
+
+/*pre loader*/
 
 .preloader {
 	position: fixed;
@@ -78,23 +76,6 @@ PRE LOADER
 	padding: 13px 40px;
 }
 
-.btn:focus,
-.btn:active {
-	outline: inherit;
-}
-
-*,
-*:before,
-*:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-p {
-	margin: 0 0 15px;
-}
-
 .clear {
 	clear: both;
 }
@@ -107,25 +88,6 @@ ul {
 
 img {
 	max-width: 100%;
-}
-
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
-	outline: none;
 }
 
 #custom-search-form .form-control {
@@ -142,12 +104,10 @@ input[type="color"],
 #custom-search-form button {
 	border: 0;
 	background: none;
-	/** belows styles are working good */
 	padding: 2px 5px;
 	margin-top: 18px;
 	position: relative;
 	left: -39px;
-	/* IE7-8 doesn't have border-radius, so don't indent the padding */
 	margin-bottom: 0;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -157,64 +117,6 @@ input[type="color"],
 
 .navbar-collapse >.form-control:focus {
 	border-color: #7d55b0;
-}
-
-h1,
-h2,
-h3 {
-	font-weight: 300;
-	margin: 0;
-}
-
-h4,
-h5 {
-	font-weight: 300;
-	margin: 0;
-	line-height: 2rem;
-}
-
-h1 {
-	font-size: 3rem;
-	line-height: 4rem;
-	font-weight: 300;
-}
-
-h2 {
-	font-size: 2.5rem;
-	line-height: 3rem;
-	margin-bottom: .9rem;
-}
-
-h3 {
-	font-weight: 300;
-	margin-bottom: .9rem;
-	font-size: 2.1rem;
-	line-height: 2.5rem;
-}
-
-h4 {
-	font-size: 1.6rem;
-	line-height: 2.2rem;
-	margin-bottom: 1.1rem;
-}
-
-h5 {
-	font-size: 1.3rem;
-	margin-bottom: 1rem;
-}
-
-h6 {
-	font-size: 1rem;
-	margin-bottom: .9rem;
-}
-
-p {
-	line-height: 1.5rem;
-	font-size: 1.1rem;
-}
-
-p:last-child {
-	margin-bottom: 0px;
 }
 
 .transition {
@@ -289,7 +191,72 @@ p:last-child {
 }
 
 .navbar-brand {
-	margin-top: 20px;
+	margin-top: 15px;
+}
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 4px;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+	background-color: #2c1d41;
+	opacity: .7;
+    border-top: 3px solid #fff200;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	background: transparent;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+		background: transparent;
+}
+.navbar-nav > li > .dropdown-menu {
+	margin-top: 4px;
+	left: 10px;
+	background-color: #2c1d41;
+	opacity: .7;
+	border-top: 3px solid #fff200;
+}
+.dropdown-menu > li > a {
+	color: #fff;
+	padding: 10px 20px;
+}
+.dropdown-menu > li > a:hover {
+	color: #fff200;
+	background: transparent;
 }
 
 /* Section choose*/
@@ -425,10 +392,10 @@ p:last-child {
 	left: 33%;
 }
 
+/*Section products*/
+
 .section_products {
 	min-height: 500px;
-	/*	background-color: #f3f3f3;*/
-	/*	margin-bottom: 100px;*/
 }
 
 .yellow {
@@ -511,10 +478,6 @@ p:last-child {
 	background-image: url(../img/product_carousel_bg.png);
 }
 
-.carousel-indicators {
-	/*    bottom: -7px;*/
-}
-
 .carousel-indicators li {
 	display: inline-block;
 	background-color: #d3c5f2;
@@ -551,6 +514,7 @@ p:last-child {
 	color: #696969;
 	font-size: 13px;
 }
+/* Section about*/
 
 .section_about {
 	margin-top: 115px;
@@ -632,6 +596,8 @@ p:last-child {
 	font-size: 12px;
 }
 
+/*Map */
+
 #mapkit-6697 {
 	height: 650px;
 	width: 100%;
@@ -652,9 +618,15 @@ p:last-child {
 
 /*Contact form*/
 
+/*
 .contact_form {
 	position:relative;
 	z-index: 30;    
+}
+*/
+.contact_content2 {
+	position: relative;	
+
 }
 
 .contact-form-area {
@@ -662,10 +634,14 @@ p:last-child {
 	background-color: #000;
 	opacity: .4;
 	color: #fff;
-	top: 50px;
+	bottom:50%;
+	transform: translateY(50%);
     left: 50%;
-    margin-left: -250px;
-    width: 600px;
+    margin-left: -400px;
+    width: 800px;
+	padding: 30px;
+	z-index: 30;    
+
 }
 label {
 	margin-left: 22px;
@@ -685,8 +661,9 @@ label {
 .contact-form-area form .contact-btn {
 	background: #ffff00;
 	border-radius:0;
-	padding: 14px 70px;
+	padding: 10px 30px;
 	color: #000;
+	margin-top: -32px;
 }
 
 .contact-form-area form .contact-btn:hover {
@@ -698,7 +675,7 @@ label {
 
 /*Scroll Up*/
 
-.scrollup{
+.scrollup {
     width: 40px;
     height: 40px;
     text-align: center;
@@ -720,6 +697,9 @@ label {
     color: #fff;
     transform:scale(1.1);
 }
+
+/*Footer*/
+
 .footer {
 	background-color: #000;
 	color: #d7d7d7;
@@ -728,4 +708,25 @@ label {
 	position: relative;
     overflow: hidden;
 }
+ .fa-facebook, .fa-google-plus, .fa-twitter, .fa-dribbble  {
+	margin-right: 10px;
+	 font-size: 15px;
+
+}
+.fa-facebook {
+	color: #59709e;
+}
+.fa-google-plus {
+	color: #ae3d2b;
+}
+.fa-twitter {
+	color: #71d6fa;
+}
+.fa-dribbble {
+	color: #e9779d;
+}
+.fa-angle-right {
+	margin-right: 5px;
+}
+
 

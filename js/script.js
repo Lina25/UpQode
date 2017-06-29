@@ -6,15 +6,9 @@ jQuery(document).ready(function ($) {
 		$(".preloader").delay(1000).fadeOut("slow");
 	});
 
-//	$(".scrollup").click(function(){
-//        window.scrollTo(0,0);
-//    });
-	// scroll Up
-
-   
-    /*---------------------------------------------*
-     * Mobile menu
-     ---------------------------------------------*/
+    
+//      mobile menu
+ 
     $('#navbar-collapse').find('a[href*=#]:not([href=#])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -30,6 +24,8 @@ jQuery(document).ready(function ($) {
             }
         }
     });
+	
+	
 
 	// main-menu-scroll
 
@@ -44,24 +40,20 @@ jQuery(document).ready(function ($) {
             jQuery('.navbar-fixed-top').removeClass('menu-scroll');
         }
     });
-
 	
-	
-    /*---------------------------------------------*
-     * Scroll Total Navbar
-     ---------------------------------------------*/
+    
+//      scroll navbar
+   
 
     $('body').scrollspy({
         target: '.navbar',
         offset: 160
     });
 
+   
+//     google map 
+    
 	
-
-    /*---------------------------------------------*
-     * Google Map Area
-     ---------------------------------------------*/
- 
     google.maps.event.addDomListener(window, 'load', init);
     var map, markersArray = [];
 
@@ -225,6 +217,8 @@ jQuery(document).ready(function ($) {
     }	
    
 });
+
+//scrolltop animation
 
  $(window).scroll(function () {
         if ($(this).scrollTop() > 800) {

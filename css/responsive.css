@@ -1,0 +1,31 @@
+/* Portrait tablets and medium desktops */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* Portrait tablets and small desktops */
+
+@media (max-width: 991px) {
+	#custom-search-form {
+		display: none;
+	}
+	.contact-form-area {
+		display:none;
+	}
+}
+
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {}
+
+
+/* Landscape phones and smaller */
+
+@media (max-width: 480px) {
+	.section_title {
+		display: none;
+	}
+}
+
+@media (max-width: 320px) {}
