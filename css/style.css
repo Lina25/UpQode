@@ -128,7 +128,7 @@ input[type="color"],
 	outline: none;
 }
 
-.form-control {
+#custom-search-form .form-control {
 	border: 0;
 	border-radius: 0;
 	font-size: 16px;
@@ -155,7 +155,7 @@ input[type="color"],
 	color: #7e7d80;
 }
 
-.form-control:focus {
+.navbar-collapse >.form-control:focus {
 	border-color: #7d55b0;
 }
 
@@ -291,41 +291,6 @@ p:last-child {
 .navbar-brand {
 	margin-top: 20px;
 }
-
-
-/*
-.navbar-default {
-    background-color: #fff;
-    border-color:0;
-}
-
-.navbar {
-    min-height:70px;
-    margin-bottom:0;
-    border:0;
-    border-radius:0;
-}
-
-.navbar-default .navbar-nav>li>a {
-    font-size:14px;
-    text-transform:uppercase;
-    color:#000000;
-	line-height: 70px;
-}
-
-.navbar-default .navbar-nav>li>a:hover {
-    font-weight: 700;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    font-weight: 700;
-    background-color: transparent;
-}
-.navbar-brand {
-margin-top: 25px;	
-}
-*/
-
 
 /* Section choose*/
 
@@ -470,6 +435,7 @@ margin-top: 25px;
 	color: #fff200;
 }
 
+/*
 .line {
 	height: 180px;
 	width: 100%;
@@ -502,7 +468,31 @@ margin-top: 25px;
 	border-left: 15px solid rgba(242, 242, 243, 0);
 	border-right: none;
 }
+*/
+.section_title {
+	position: relative;
+	height: 180px;
+	width: 100%;
+}
 
+.section_title svg {
+	height: 100%;
+}
+
+.section_title img {
+	position: relative;
+	width: 100%;
+	height: 180px;
+	clip-path: polygon(100% 0, 100% 80%, 54% 80%, 50% 100%, 46% 80%, 0 80%, 0 0)
+}
+
+.section_title h2 {
+	color: white;
+	text-transform: uppercase;
+	position: absolute;
+	top: 55px;
+	left: 40%;
+}
 .product_photo img {
 	height: 140px;
 	width: 140px;
@@ -661,29 +651,44 @@ margin-top: 25px;
 }
 .contact-form-area {
 	position: absolute;
-	bottom: 40px;
-	background-color: #343332;
+	bottom: 145px;
+	background-color: #000;
+	opacity: .4;
+	color: #fff;
 	padding: 30px;
-	width: 80%;
-	margin-bottom: 30px;
+	width: 100%;
+}
+label {
+	margin-left: 22px;
+}
+.contact_form {
+	position:relative;
 	z-index: 30;
-
 }
 
+.checkbox input[type="checkbox"] {
+	background: transparent;
+	border-radius:0;
+}
 .form-control {
 	height: 45px;
 	background-color: transparent;
 	border: 1px solid #fff;
+	border-radius:0;
 }
 
 .contact-form-area form .contact-btn {
 	background: #ffff00;
+	border-radius:0;
 	padding: 14px 70px;
 	color: #000;
 }
 
 .contact-form-area form .contact-btn:hover {
 	background: #fff;
+}
+.form_txt {
+	color: #fff;
 }
 /*Scroll Up*/
 
@@ -695,7 +700,7 @@ margin-top: 25px;
     font-size: 30px;
     background: #4bcaff;
     position: fixed;
-    bottom: 50px;
+    bottom: 100px;
     right: 50px;
     font-weight: bold;
     border-radius: 100%;
