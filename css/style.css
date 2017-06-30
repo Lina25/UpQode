@@ -454,7 +454,6 @@ img {
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 100%;
-	/*    background: #fff;*/
 	margin-top: 30px;
 	margin-right: 28px;
 	margin-bottom: 100px;
@@ -544,8 +543,8 @@ img {
 	background: #009dda;
 	box-shadow: none;
 	position: relative;
-	-webkit-animation: animate-positive 2s;
-	animation: animate-positive 2s;
+	-webkit-animation: animate-positive 5s;
+	animation: animate-positive 7s;
 }
 
 .progress .progress-value {
