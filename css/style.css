@@ -504,7 +504,7 @@ img {
 /* Section about*/
 
 .section_about {
-	margin-top: 115px;
+	padding-top: 115px;
 	margin-bottom: 115px;
 }
 
@@ -543,8 +543,8 @@ img {
 	background: #009dda;
 	box-shadow: none;
 	position: relative;
-	-webkit-animation: animate-positive 5s;
-	animation: animate-positive 7s;
+	-webkit-animation: animate-shine 5s ease-out;
+	animation: animate-shine 5s ease-out;
 }
 
 .progress .progress-value {
@@ -556,16 +556,33 @@ img {
 	right: 0;
 }
 
-@-webkit-keyframes animate-positive {
-	0% {
-		width: 0;
-	}
+@-webkit-keyframes animate-shine {
+	 0% {
+    /*    opacity: 0;*/
+    width: 0;
+  }
+  50% {
+    /*    opacity: .5;*/
+  }
+  100% {
+    /*    opacity: 0;*/
+    /*    width: 100%;*/
+  }
 }
 
-@keyframes animate-positive {
-	0% {
-		width: 0;
-	}
+
+@keyframes animate-shine {
+  0% {
+    /*    opacity: 0;*/
+    width: 0;
+  }
+  50% {
+    /*    opacity: .5;*/
+  }
+  100% {
+    /*    opacity: 0;*/
+    /*    width: 100%;*/
+  }
 }
 
 .ipad_img {
@@ -573,6 +590,11 @@ img {
 	height: 100%;
 }
 
+/*Section contact*/
+
+.section_contact {
+	padding-top: 115px;
+}
 .contact_content h2 {
 	text-transform: uppercase;
 	font-weight: 600;
