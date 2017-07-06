@@ -504,8 +504,8 @@ img {
 /* Section about*/
 
 .section_about {
-	padding-top: 115px;
-	margin-bottom: 115px;
+	padding-top: 100px;
+/*	margin-bottom: 115px;*/
 }
 
 .grey {
@@ -593,7 +593,7 @@ img {
 /*Section contact*/
 
 .section_contact {
-	padding-top: 115px;
+	padding-top: 100px;
 }
 .contact_content h2 {
 	text-transform: uppercase;
