@@ -121,9 +121,9 @@ img {
 	box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 	background-color: rgba(122, 96, 194, 0.9) !important;
-	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	transition: all .3s !important;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease !important;
 	height: 75px;
 }
 
@@ -684,6 +684,7 @@ label {
 /*Scroll Up*/
 
 .scrollup {
+	display: none;
 	width: 40px;
 	height: 40px;
 	text-align: center;

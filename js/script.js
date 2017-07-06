@@ -1,4 +1,7 @@
 jQuery(document).ready(function ($) {
+	//wow js init
+	new WOW().init();
+	
 	$(window).load(function () {
 		$(".loaded").fadeOut();
 		$(".preloader").delay(1000).fadeOut("slow");
@@ -35,6 +38,8 @@ jQuery(document).ready(function ($) {
 		target: '.navbar'
 		, offset: 160
 	});
+	
+	
 	//     google map 
 	google.maps.event.addDomListener(window, 'load', init);
 	var map, markersArray = [];
@@ -235,11 +240,11 @@ jQuery(document).ready(function ($) {
 });
 //scrolltop animation
 $(window).scroll(function () {
-	if ($(this).scrollTop() > 800) {
+	if ($(this).scrollTop() > 700) {
 		$('.scrollup').fadeIn('slow');
 	}
 	else {
-		$('.scrollup').fadeOut('slow');
+		$('.scrollup').css('display', 'none')
 	}
 });
 $('.scrollup').click(function () {
@@ -248,3 +253,4 @@ $('.scrollup').click(function () {
 	}, 1000);
 	return false;
 });
+
