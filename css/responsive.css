@@ -17,15 +17,37 @@
 
 /* Landscape phones and portrait tablets */
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+	.section_title {
+		display: none;
+	}
+	.wow {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+}
 
 
 /* Landscape phones and smaller */
 
 @media (max-width: 480px) {
-	.section_title {
-		display: none;
-	}
+	
 }
 
 @media (max-width: 320px) {}

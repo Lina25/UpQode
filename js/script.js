@@ -6,22 +6,7 @@ jQuery(document).ready(function ($) {
 		$(".loaded").fadeOut();
 		$(".preloader").delay(1000).fadeOut("slow");
 	});
-	//      mobile menu
-	$('#navbar-collapse').find('a[href*=#]:not([href=#])').click(function () {
-		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			if (target.length) {
-				$('html,body').animate({
-					scrollTop: (target.offset().top - 40)
-				}, 1000);
-				if ($('.navbar-toggle').css('display') != 'none') {
-					$(this).parents('.container').find(".navbar-toggle").trigger("click");
-				}
-				return false;
-			}
-		}
-	});
+	
 	// main-menu-scroll
 	jQuery(window).scroll(function () {
 		var top = jQuery(document).scrollTop();
@@ -277,7 +262,6 @@ $('.scrollup').click(function () {
         var containerOffset = $section.offset().top - window.innerHeight;
         if (scrollOffset > containerOffset) {
             loadDaBars();
-            // unbind event not to load scrolsl again
             $(document).unbind('scroll');
         }
     });

@@ -45,18 +45,10 @@ body {
 	margin: -20px 0 0 -20px;
 }
 
-.btn.extra-width {
-	padding: 13px 40px;
-}
-
 ol,
 ul {
 	list-style: none;
 	padding: 0;
-}
-
-img {
-	max-width: 100%;
 }
 
 #custom-search-form .form-control {
@@ -133,7 +125,6 @@ img {
 }
 
 .navbar {
-	min-height: 90px;
 	min-height: 90px;
 	margin-bottom: 0;
 	border: 0;
@@ -300,8 +291,7 @@ img {
 
 .section_choose .choose_content {
 	border: 1px solid #eee;
-	width: 220px;
-	height: 300px;
+	height: 290px;
 	overflow: hidden;
 }
 
@@ -312,7 +302,6 @@ img {
 
 .section_choose .choose_overlay {
 	margin-top: 0px;
-	width: 220px;
 	color: #fff;
 	margin-left: -2px;
 	position: relative;
@@ -330,20 +319,22 @@ img {
 
 .info i {
 	display: inline-block;
+	font-size: 18px;
+	color: #fff;
 	margin: 20px 5px;
 	height: 40px;
 	width: 40px;
-	line-height: 37px;
+	line-height: 39px;
 	border-radius: 50%;
-	border: 2px solid #fff;
+	border: 1px solid #fff;
 	background: transparent;
 	transition: all .4s;
 }
 
-.info i {
-	font-size: 20px;
-	color: #fff;
-	transition: all .4s;
+.info i:hover {
+	background-color: #fff;
+	color: #503392;
+	transition: all 1s;
 }
 
 .choose_content h4 {
@@ -373,7 +364,6 @@ img {
 	margin-bottom: 30px;
 	/*   margin-left: 70px;*/
 }
-
 
 /*Section products*/
 
@@ -502,7 +492,6 @@ img {
 	font-size: 13px;
 }
 
-
 /* Section about*/
 
 .section_about {
@@ -591,7 +580,6 @@ img {
 	height: 100%;
 }
 
-
 /*Section contact*/
 
 .section_contact {
@@ -607,7 +595,6 @@ img {
 	margin-bottom: 50px;
 	font-size: 12px;
 }
-
 
 /*Map */
 
@@ -629,7 +616,6 @@ img {
 	top: 0;
 	z-index: 20;
 }
-
 
 /*Contact form*/
 
@@ -655,9 +641,9 @@ label {
 	margin-left: 22px;
 }
 
-.checkbox input[type="checkbox"] {
+ input[type="checkbox"] {
 	background: transparent;
-	border-radius: 0;
+	border-radius: 0 !important;
 }
 
 .form-control {
@@ -682,7 +668,6 @@ label {
 .form_txt {
 	color: #fff;
 }
-
 
 /*Scroll Up*/
 
@@ -709,7 +694,6 @@ label {
 	color: #fff;
 	transform: scale(1.1);
 }
-
 
 /*Footer*/
 
