@@ -3,10 +3,6 @@ body {
 	background-color: #ffffff;
 	font-size: 13px;
 	color: #000000;
-	width: 100%;
-	padding: 0;
-	margin-left: 0;
-	margin-right: 0;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 }
@@ -43,12 +39,6 @@ body {
 	-moz-background-size: cover;
 	background-size: cover;
 	margin: -20px 0 0 -20px;
-}
-
-ol,
-ul {
-	list-style: none;
-	padding: 0;
 }
 
 #custom-search-form .form-control {
@@ -365,6 +355,7 @@ ul {
 	/*   margin-left: 70px;*/
 }
 
+
 /*Section products*/
 
 .section_products {
@@ -492,6 +483,7 @@ ul {
 	font-size: 13px;
 }
 
+
 /* Section about*/
 
 .section_about {
@@ -580,6 +572,7 @@ ul {
 	height: 100%;
 }
 
+
 /*Section contact*/
 
 .section_contact {
@@ -596,16 +589,17 @@ ul {
 	font-size: 12px;
 }
 
+
 /*Map */
 
-#mapkit-6697 {
+#map {
 	height: 650px;
 	width: 100%;
 	position: relative;
 	overflow: hidden;
 }
 
-#mapkit-6697:after {
+#map:after {
 	background-color: rgba(26, 26, 26, .8);
 	content: "";
 	height: 100%;
@@ -616,6 +610,7 @@ ul {
 	top: 0;
 	z-index: 20;
 }
+
 
 /*Contact form*/
 
@@ -641,7 +636,7 @@ label {
 	margin-left: 22px;
 }
 
- input[type="checkbox"] {
+input[type="checkbox"] {
 	background: transparent;
 	border-radius: 0 !important;
 }
@@ -669,6 +664,7 @@ label {
 	color: #fff;
 }
 
+
 /*Scroll Up*/
 
 .scrollup {
@@ -680,7 +676,7 @@ label {
 	font-size: 30px;
 	background: #4bcaff;
 	position: fixed;
-	bottom: 100px;
+	bottom: 130px;
 	right: 50px;
 	font-weight: bold;
 	border-radius: 100%;
@@ -694,6 +690,7 @@ label {
 	color: #fff;
 	transform: scale(1.1);
 }
+
 
 /*Footer*/
 
